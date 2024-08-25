@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import projectsData from '../../data/projects.json';
-import styles from './Projects.module.css'; // Import the CSS module
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import styles from './Projects.module.css'; 
+import '@fortawesome/react-fontawesome';
+import '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/free-solid-svg-icons';
 
 export const Projects = () => {
   const containerRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(true); // Default to true for initial render
+  const [isVisible, setIsVisible] = useState(true); 
 
   const scroll = (direction) => {
     if (containerRef.current) {
@@ -22,7 +24,7 @@ export const Projects = () => {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.1, // Adjust this value based on when you want to detect visibility
+        threshold: 0.1, 
       }
     );
 
