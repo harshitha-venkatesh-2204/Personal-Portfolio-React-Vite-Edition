@@ -15,7 +15,6 @@
   color: #3d2621;
 }
 
-
 .projects-container {
   padding-top: 20px;
   display: flex;
@@ -23,9 +22,10 @@
   gap: 20px;
   position: relative; 
   -webkit-overflow-scrolling: touch;
-  width: calc(100% - 80px); 
+  width: calc(100% - 40px); 
   margin: 0 auto; 
-  scrollbar-width: none; 
+  scrollbar-width: none;
+  padding-left: 10px; 
 }
 
 .projects-container::-webkit-scrollbar {
@@ -34,31 +34,39 @@
 
 .project-card {
   flex: 0 0 auto; 
-  width: calc(100% / 3 - 20px); 
+  width: calc(50% - 20px); 
   background-color: #f8f8f8;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 15px; 
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   scroll-snap-align: start; 
+  box-sizing: border-box; 
 }
 
 .project-card h6 a {
   text-decoration: none;
-  color: #964e3a;;
+  color: #964e3a;
   font-size: 15px;
   font-weight: 800;
+  margin: 0; 
+  display: block; 
+  overflow-wrap: break-word; 
+  word-break: break-word; 
 }
 
 .project-card h6 a:hover {
   color: #632f23;
   font-weight: 1200; 
   text-decoration: none;
+  display: block; 
+  overflow-wrap: break-word; 
+  word-break: break-word; 
 }
 
 .project-card p {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px; 
   color: #A6776A;
   text-align: justify;
   line-height: 1.6rem;
@@ -82,7 +90,6 @@
   z-index: 1000; 
 }
 
-
 .scroll-arrow.left {
   left: 10px; 
 }
@@ -93,4 +100,10 @@
 
 .scroll-arrow.hidden {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 20px); 
+  }
 }

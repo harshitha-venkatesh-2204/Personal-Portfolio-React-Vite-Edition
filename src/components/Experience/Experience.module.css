@@ -23,63 +23,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .history {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
 
 .historyItem {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column; 
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 1000px;
-  margin-bottom: 10px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px; 
 }
 
 .historyItemContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
+  align-items: center; 
   gap: 15px;
 }
 
 .historyItem img {
-  width: 150px; 
-  height: 100px; 
+  width: 100px; 
+  height: 50px; 
   border-radius: 10px;
   background: white;
-  padding: 15px;
+  padding: 5px;
 }
 
 .historyItemDetails {
+  text-align: center; 
   color: #A6776A;
   text-decoration: none;
 }
 
 .historyItemDetails .role {
-  font-size: 15px;
+  font-size: 15px; 
   font-weight: 700;
   color: #632f23;
 }
 
 .historyItemDetails .date {
-  font-size: 12px;
+  font-size: 12px; 
   font-weight: 700;
   color: #632f23;
 }
 
 .historyItemDetails .description {
-  margin-top: 3px;
-  font-size: 14px;
+  margin-top: 7px; 
+  font-size: 13px; 
   color: #A6776A;
   text-align: justify;
   line-height: 1.6;
+}
+
+.historyItemDetails .icon {
+  font-size: 24px; 
+  color: #A6776A; 
+  margin-bottom: 10px;
 }
 
 .header {
@@ -116,4 +128,10 @@
 
 .backButton:hover {
   color: #964e3a;
+}
+
+@media (max-width: 768px) {
+  .historyItem {
+    width: calc(100% - 20px); /* 1 item per row on smaller screens */
+  }
 }

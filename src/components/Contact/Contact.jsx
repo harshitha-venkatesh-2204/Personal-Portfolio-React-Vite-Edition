@@ -3,11 +3,13 @@ import styles from "./Contact.module.css";
 import linkedinImg from "../../../assets/skills/linkedin.jpg";
 import githubImg from "./../../../assets/skills/github.jpg";
 import emailImg from "./../../../assets/skills/email.jpg";
+import phoneImg from "./../../../assets/skills/phone.jpg";
 
 const contactDetails = {
   linkedin: "https://www.linkedin.com/in/harshitha-venkatesh",
   github: "https://github.com/harshitha-venkatesh-2204",
-  email: "mailto:harshithavenkatesh2204@gmail.com"
+  email: "mailto:harshithavenkatesh2204@gmail.com",
+  phone: "+1 412-512-2766" 
 };
 
 export const Contact = () => {
@@ -35,6 +37,12 @@ export const Contact = () => {
               <img src={emailImg} alt="Email" className={styles.icon} />
               Email
             </a>
+          </li>
+          <li className={styles.contactItem}>
+            <div className={styles.contactLink}>
+              <img src={phoneImg} alt="Phone" className={styles.icon} />
+              <span>{contactDetails.phone}</span>
+            </div>
           </li>
         </ul>
       </div>
