@@ -1,0 +1,94 @@
+.container {
+    position: relative;
+    padding: 73px;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #F7F4F0;
+  }
+  
+  .title {
+    color: #A6776A;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+  .title span {
+    color: #33211c;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+  }
+  
+  .certificationsList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  .certificationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 4px; 
+    border-radius: 6px; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+  }
+  
+  .certificationIcon {
+    width: 25px; 
+    height: 25px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .certificationLink {
+    font-size: 13px;
+    color: #A6776A;
+    text-decoration: none !important; 
+  }
+  
+  .showCredential {
+    text-decoration: none;
+    color: #A6776A;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: color 0.3s;
+  }
+  
+  .certificationLink:hover {
+    color: #964e3a;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .container {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .content {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .certificationsList {
+      flex-direction: column; 
+    }
+  }
+  

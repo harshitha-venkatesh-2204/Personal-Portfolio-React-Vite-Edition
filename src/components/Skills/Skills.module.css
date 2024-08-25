@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+  padding: 73px;
+  margin-top: 100px;
+  z-index: 1;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #F7F4F0;
+}
+
+.title {
+  padding-top: 60px;
+  color: #A6776A;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center!important;
+  padding-bottom: 20px;
+}
+
+.title span {
+  color: #2b1c18;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 0.75rem; 
+  border-radius: 6px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+  width: 120px; 
+}
+
+.skillIcon {
+  width: 40px; 
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.skillText p {
+  font-size: 0.8rem; 
+  color: #A6776A;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .skillsList {
+    flex-direction: column; 
+  }
+}
+
+.buttonContainer {
+  margin-top: 48px !important; 
+
+}
+
+.contactBtn {
+  text-decoration: none !important;
+  background-color: #A6776A;
+  color: white;
+  border-radius: 10px; 
+  font-size: 20px;
+  padding: 12px 24px;
+  box-shadow: 0 4px 6px rgba(243, 228, 228, 0.25);
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 40px !important;
+}
+
+.contactBtn:hover {
+  background-color:  #964e3a;
+  transform: scale(1.05);
+}

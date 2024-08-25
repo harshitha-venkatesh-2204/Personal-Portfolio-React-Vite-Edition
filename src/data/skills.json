@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.jpg"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "R",
+    "imageSrc": "skills/R.jpg"
+  },
+  {
+    "title": "C#",
+    "imageSrc": "skills/Csharp.png"
+  },
+  {
+    "title": "NumPy",
+    "imageSrc": "skills/numpy.png"
+  },
+  {
+    "title": "Pandas",
+    "imageSrc": "skills/Pandas.png"
+  },
+  {
+    "title": "Matplotlib",
+    "imageSrc": "skills/matplotlib.png"
+  },
+  {
+    "title": "Seaborn",
+    "imageSrc": "skills/seaborn.png"
+  },
+  {
+    "title": "Scikit-Learn",
+    "imageSrc": "skills/scikit.png"
+  },
+  {
+    "title": "Tensorflow",
+    "imageSrc": "skills/TF.png"
+  },
+  {
+    "title": "Keras",
+    "imageSrc": "skills/keras.png"
+  },
+  {
+    "title": "Tidyverse",
+    "imageSrc": "skills/tidyverse.jpeg"
+  },
+  {
+    "title": "Git Bash",
+    "imageSrc": "skills/gitbash.jpg"
+  },
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "React JS",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/mysql.jpg"
+  }
+]

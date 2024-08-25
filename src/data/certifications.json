@@ -1,0 +1,75 @@
+{
+    "certifications": [
+      {
+        "title": "Programming for Everybody",
+        "logo": "skills/michigan.png",  
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/JLG8CQENQRT9"
+      },
+      {
+        "title": "Python Data Structures",
+        "logo": "skills/michigan.png",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/TLBLTYSJDAE8"
+      },
+      {
+        "title": "Introduction to R Programming and Tidyverse",
+        "logo": "skills/colorado.jpeg",  
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/8LZYMXQFGABK"
+      },
+      {
+        "title": "Python Packages for Data Science",
+        "logo": "skills/colorado.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/K2DEUP7KUUN2"
+      },
+      {
+        "title": "Meta Data Analyst Specialization",
+        "logo": "skills/meta.png",
+        "showCredential": "https://www.coursera.org/account/accomplishments/specialization/YQDJ8QB66J7Q"
+      },
+      {
+        "title": "Microsoft Azure Machine Learning",
+        "logo": "skills/Azure.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/HKC5CCCYNPM8"
+      },
+      {
+        "title": "Computer Vision in Microsoft Azure",
+        "logo": "skills/Azure.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/KQHTNEUJ8VBF"
+      },
+      {
+        "title": "Natural Language Processing in Microsoft Azure",
+        "logo": "skills/Azure.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/PATFWCCYRWB5"
+      },
+      {
+        "title": "Artificial Intelligence on Microsoft Azure",
+        "logo": "skills/Azure.jpeg", 
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/3CMQUXR5Y9WM"
+      },
+      {
+        "title": "Machine Learning Specialization",
+        "logo": "skills/AI.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/specialization/GSNY7C5KUW6P"
+      },
+      {
+        "title": "Neural Networks and Deep Learning",
+        "logo": "skills/AI.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/X3YW4FMXU2GP"
+      },
+      {
+        "title": "Improving Deep Neural Networks",
+        "logo": "skills/AI.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/X48269MVSE4K"
+      },
+      {
+        "title": "Convolutional Neural Networks",
+        "logo": "skills/AI.jpeg",  
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/DRDL6TRUS7FE"
+      },
+      {
+        "title": "Sequence Models",
+        "logo": "skills/AI.jpeg",
+        "showCredential": "https://www.coursera.org/account/accomplishments/verify/ZL3BYAL9YPCJ"
+      }
+    ]
+  }
+  

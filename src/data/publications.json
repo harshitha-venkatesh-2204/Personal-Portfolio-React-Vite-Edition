@@ -1,0 +1,16 @@
+{
+  "publications": [
+    {
+      "title": "Biofeedback Glove for Stroke Rehabilitation Therapy",
+      "journal": "IEEE Xplore",
+      "description": "This publication introduces an innovative electric glove system designed to address the limitations of current stroke rehabilitation devices, which are often complex, bulky, and expensive. Our compact and cost-effective solution aids finger impairment in post-stroke patients and is equipped with features that allow for detailed analysis of rehabilitation progress through a data scale. This user-friendly system provides physiotherapists and doctors with valuable qualitative insights, aiming to improve accessibility and effectiveness in stroke recovery. Our goal is to deliver an effective and affordable rehabilitation tool that benefits millions of stroke survivors.",
+      "link": "https://ieeexplore.ieee.org/document/9339524"
+    },
+    {
+      "title": "SPi-Bot: A Gesture Controlled Virtual Telepresence Robot",
+      "journal": "International Journal of Modern Agriculture",
+      "description": "This publication details the development of a gesture-controlled spider robot with integrated telepresence capabilities. The system allows users to remotely navigate and perceive their environment via a handheld device, offering an immersive experience that closely simulates physical presence in a remote location. By leveraging advanced tele-robotics, this innovation pushes the boundaries of telepresence technology, delivering a near-real-world experience across various applications.",
+      "link": "https://www.modern-journals.com/index.php/ijma/article/view/1249"
+    }
+  ]
+}
