@@ -270,7 +270,7 @@
     grid-template-columns: 1fr; /* Single column for small screens */
     gap: 20px;
     padding: 20px;
-    margin-top: 250px;
+    margin-top: 350px;
   }
 
   /* Adjust the job items to fit in a single column */
@@ -296,6 +296,7 @@
     width: 50px; /* Smaller icon size */
     height: 55px;
     padding: 30px;
+    margin-left: 50px;
   }
 
   .yellowButton {
