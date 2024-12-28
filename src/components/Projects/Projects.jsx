@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import projectsData from '../../data/projects.json'; 
 import styles from './Projects.module.css'; 
+import { getImageUrl } from "../../utils"
 import '@fortawesome/react-fontawesome';
 import '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/free-solid-svg-icons';
@@ -54,7 +55,7 @@ export const Projects = () => {
               </a>
             </h6>
             {/* Adding the project image */}
-            <img src={project.image} className={styles['project-image']} alt={project.title} />
+            <img src={getImageUrl(project.image)} className={styles['project-image']} alt={project.title} />
           </div>
         ))}
       </div>

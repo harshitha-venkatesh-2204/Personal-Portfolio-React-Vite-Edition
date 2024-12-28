@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Skills.module.css";  // Make sure to create a separate CSS module for Publications
 import publicationsData from "../../data/publications.json";  // Import your JSON file
+import { getImageUrl } from "../../utils"
 
 const Publications = () => {
   const [publications, setPublications] = useState([]);
@@ -20,7 +21,7 @@ const Publications = () => {
             className={styles.publicationLink}
           >
             <img
-              src={publication.image}
+              src={getImageUrl(publication.image)}
               alt={`Logo of ${publication.journal}`}
               className={styles.publicationIcon}
             />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Skills.module.css";
 import parttimeData from "../../data/parttime.json";
+import { getImageUrl } from "../../utils"
 
 
 const Parttime = () => {
@@ -15,7 +16,7 @@ const Parttime = () => {
             {parttimeJobs.map((job, index) => (
               <li key={index} className={styles.jobItem}>
                 <img
-                  src={job.imageSrc}
+                  src={getImageUrl(job.imageSrc)}
                   alt={`${job.role} at ${job.organisation}`}
                   className={styles.jobIcon}
                 />
