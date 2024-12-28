@@ -9,7 +9,6 @@ export const Experience = () => {
   return (
     <section className={styles.container} id="experience">
       <div className={styles.header}>
-        <p className={styles.title}>Exper<span>iences</span></p>
       </div>
       <div className={styles.content}>
         <ul className={styles.history}>
@@ -23,7 +22,7 @@ export const Experience = () => {
                   />
                 </div>
                 <div className={styles.historyItemDetails}>
-                  <p1 className={styles.role}>{`${historyItem.role}, ${historyItem.organisation}`}</p1><br/>
+                  <p1 className={styles.role}>{`${historyItem.role}`}</p1><br/>
                   <p2 className={styles.date}>{`${historyItem.startDate} - ${historyItem.endDate}`}</p2>
                     {historyItem.experiences.map((experience, idx) => (
                       <p className={styles.description} key={idx}>{experience}</p>

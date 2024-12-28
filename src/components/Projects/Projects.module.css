@@ -1,31 +1,45 @@
 .projects-section {
-  padding: 20px;
+  padding: 40px;
   position: relative;
+  margin-bottom: 100px;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
 }
 
 .title {
-  padding-top: 100px;
-  color: #A6776A;
-  font-size: 40px;
-  text-transform: uppercase;
+  padding-top: 40px;
   text-align: center;
-}
-
-.title span {
-  color: #3d2621;
+  font-size: 90px;
+  font-weight: 700;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 0px  #f9c414,
+               4px 4px 0px #f9c414;
+  animation: float 3s ease-in-out infinite; /* Apply the animation */
+  transition: all 0.3s ease-in-out;
 }
 
 .projects-container {
-  padding-top: 20px;
+  padding-top: 200px;
   display: flex;
   overflow-x: auto; 
-  gap: 20px;
+  gap: 30px;
   position: relative; 
   -webkit-overflow-scrolling: touch;
   width: calc(100% - 40px); 
   margin: 0 auto; 
   scrollbar-width: none;
-  padding-left: 10px; 
+  padding-left: 30px; 
+  padding-right: 40px;
+  padding-bottom: 10px;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -34,7 +48,7 @@
 
 .project-card {
   flex: 0 0 auto; 
-  width: calc(50% - 20px); 
+  width: calc(25% - 20px); /* Reduced the width from 50% to 40% */
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 15px; 
@@ -42,26 +56,43 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   scroll-snap-align: start; 
   box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Added smooth transition for scale effect */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Scales the card on hover */
+  border: 5px solid #f9dc5c;
+}
+
+.project-card h6 {
+  font-size: 18px; /* Adjusted font size */
+  color: #291c2d;
+  font-family: 'Niconne', cursive;
+  font-weight: 200;
+  margin-bottom: 10px; /* Added margin to separate title from image */
+  text-align: center; /* Centered the title */
 }
 
 .project-card h6 a {
   text-decoration: none;
-  color: #964e3a;
-  font-size: 15px;
-  font-weight: 800;
-  margin: 0; 
-  display: block; 
-  overflow-wrap: break-word; 
-  word-break: break-word; 
+  color: #291c2d;
+  font-weight: 200;
 }
 
 .project-card h6 a:hover {
-  color: #632f23;
-  font-weight: 1200; 
+  font-weight: 2400; 
   text-decoration: none;
-  display: block; 
-  overflow-wrap: break-word; 
-  word-break: break-word; 
+}
+
+.project-card img {
+  width: 100%; /* Ensures image takes the full width of the card */
+  height: auto;
+  max-height: 200px; /* Limit the height of the image */
+  object-fit: cover; /* Ensures the image maintains aspect ratio while filling the space */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 .project-card p {
@@ -74,20 +105,25 @@
 
 .scroll-arrow {
   position: absolute; 
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
-  background-color: #A6776A;
+  background-color: #f9dc5c;
   border: none; 
   padding: 8px; 
   cursor: pointer;
   font-size: 16px; 
-  width: 30px; 
-  height: 30px; 
+  width: 70px; 
+  height: 70px; 
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff; 
   z-index: 1000; 
+}
+
+.scroll-arrow:hover {
+  transform: translateY(-50%) scale(1.2); /* Scale up on hover */
+  background-color: #f0d142;
 }
 
 .scroll-arrow.left {
@@ -104,6 +140,6 @@
 
 @media (max-width: 768px) {
   .project-card {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px); /* Stacks the cards full width on small screens */
   }
 }

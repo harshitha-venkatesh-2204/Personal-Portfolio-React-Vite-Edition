@@ -1,107 +1,134 @@
-.header {
-  background-color: #A6776A;
-  padding: 5px 0;
-  width: 100%;
+/* Navbar container styling */
+.navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 50px; /* Rounded edges */
+  margin: 30px 30px 10px 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start; /* Pushes content to the left */
+  gap: 400px; /* Adds space between the name and the navbar items */
+  z-index: 1000; /* Ensure navbar stays above all content */
 }
 
-.headerTitle {
-  font-size: 30px;
-  font-weight: 600;
+/* Active state for navbar item */
+.navbar-link.active {
+  background-color: #f9dc5c; /* Yellow color for the active link */
   color: white;
-  font-family: "Dancing Script", cursive;
+  border-radius: 25px; /* Slightly more curved edge */
+  padding: 10px 20px; /* Add more padding on hover for a better effect */
+}
+
+/* Styling for h1 to place it on the left of the navbar */
+h1 {
+  font-family: "Dancing Script", serif;
+  color: #684c6b; /* Deep purple color */
+  letter-spacing: 2px;
+  margin-left: 0 !important; /* Removes left margin */
+  padding-left: 20px !important; /* Adds left padding */
+  font-size: 36px; /* Adjusted font size for the name */
+  font-weight: 700; /* Bold the name */
+  margin-right: 0; /* Removed right margin */
+}
+
+/* List styling */
+.navbar-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
   margin: 0;
-  text-align: center;
-  background-color: #A6776A;
+  gap: 15px; /* Add spacing between the list items */
+  flex-grow: 1; /* Pushes the navbar items to the right */
+}
+
+/* Navbar items */
+.navbar-item {
   position: relative;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 50px 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.menuItems {
-  display: flex;
-  gap: 47px;
-  list-style: none;
-}
-
-.menuItems a {
-  font-size: 20px;
-  color: #A6776A;
+.navbar-link {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif !important;
-  transition: color 0.3s, text-shadow 0.3s;
-  font-weight: 500;
-}
-
-.menuItems a:hover {
-  color: #964e3a;
-  font-weight: 800;
-}
-
-.menuBtn {
-  display: none;
+    font-family: 'Niconne', cursive;
   font-size: 20px;
-  cursor: pointer;
+  font-weight: 700;
+  color: #684c6b; /* Deep purple */
+  padding: 30px 15px; /* Add some padding for a better hover effect */
+  border-radius: 20px; /* Rounded corners for navbar items */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Active state for navbar item */
+.active .navbar-link {
+  background-color: #d1c4e9; /* Soft lavender color */
   color: white;
-  background: #A6776A;
-  border: none;
-  z-index: 1001;
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-section {
-  margin-top: 60px;
+/* Hover effect for navbar items */
+.navbar-link:hover {
+  background-color: #f9dc5c; /* Lavender background on hover */
+  color: white; /* Darker purple for text on hover */
+  border-radius: 25px; /* Slightly more curved edge */
+  padding: 10px 20px; /* Add more padding on hover for a better effect */
 }
 
-@media screen and (max-width: 830px) {
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Navbar container adjustments */
   .navbar {
-    flex-direction: column;
-    padding: 40px;
+    padding: 15px; /* Reduce padding */
+    margin: 15px; /* Reduce margin */
+    gap: 150px; /* Reduce space between logo and navbar items */
   }
 
-  .menu {
-    flex-direction: column;
+  /* Adjust the h1 font size for mobile */
+  h1 {
+    font-size: 28px; /* Smaller font size */
+    padding-left: 10px; /* Less padding */
+  }
+
+  /* Navbar items adjustments */
+  .navbar-list {
+    gap: 10px; /* Reduce space between the navbar items */
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .navbar-link {
+    padding: 15px 10px; /* Reduce padding for smaller screens */
+    font-size: 18px; /* Smaller font size */
+  }
+
+  /* Make the navbar items fill the width of the container */
+  .navbar-item {
     width: 100%;
-    padding: 0px; 
-    opacity: 0.9;
+    text-align: center;
+  }
+}
+
+/* For very small screens (less than 480px) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin: 10px; /* Reduce margin for very small screens */
+    gap: 100px; /* Further reduce space */
   }
 
-  .menuItems {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: 6px; 
-    background-color: #f2e9e0;
+  h1 {
+    font-size: 24px; /* Smaller font size for the name */
   }
 
-  .menuOpen {
-    display: flex;
+  .navbar-list {
+    gap: 5px; /* Even smaller gap between navbar items */
   }
 
-  .menuBtn {
-    display: block;
+  .navbar-link {
+    padding: 12px 8px; /* Even smaller padding */
+    font-size: 16px; /* Smaller font size */
   }
 }

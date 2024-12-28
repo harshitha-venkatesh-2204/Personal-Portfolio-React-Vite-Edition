@@ -1,120 +1,162 @@
-.header {
-  width: 100%;
-  background-color: white;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.title {
-  padding-top: 80px;
-  color: #A6776A;
-  font-size: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 40px;
-  text-decoration: double;
-}
-
-.title span {
-  color: #2b1c18;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.navLink {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.navLink:hover {
-  text-decoration: none;
-}
+/* Container for header and content */
 
 .container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 49px;
-  z-index: 1;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 150px;
   margin-left: 10%;
   margin-right: 10%;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
+/* Content container */
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  color: rgb(31, 2, 2);
+  align-items: center;
+  color: white;
   z-index: 1;
+  text-align: center;
 }
 
+/* Adjust greeting and name text sizes */
+.greeting,
+.name {
+  margin: 0;
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}
 
+/* Name styling */
+.name {
+  font-size: 60px;
+  color: white;
+}
+
+/* Description text styling */
 .description {
   font-size: 15px;
-  font-family: "PT Sans Narrow", sans-serif;
-  max-width: 600px; 
-  line-height: 1.6;
-  text-align: justify; 
-  color: rgb(67, 64, 64);
-}
-
-.contactBtn {
-  text-decoration: none !important;
-  background-color: #A6776A;
+  font-family: 'Niconne', cursive;
   color: white;
-  border-radius: 10px; 
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* LinkedIn Button */
+.linkedinBtn {
+  font-family: 'Niconne', cursive;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f9c414;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
   font-size: 20px;
-  padding: 12px 24px;
-  box-shadow: 0 4px 6px rgba(243, 228, 228, 0.25);
-  transition: background-color 0.3s, transform 0.3s;
-  margin-top: 40px;
+  transition: background-color 0.3s;
 }
 
-.contactBtn:hover {
-  background-color:  #964e3a;
-  transform: scale(1.05);
+.linkedinBtn:hover {
+  background-color:	#f9dc5c;
 }
 
+/* Hero image styling */
 .heroImg {
-  width: 300px; 
-  height: 300px; 
-  z-index: 1;
-  animation-name: floating;
-  animation-duration: 3s;
-  object-fit: cover; 
-  animation-iteration-count: 1;
-  animation-timing-function: initial;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid white;
+  position: relative;
+}
+
+/* Container for image and contact info */
+.imageAndContactContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imageAndContactContainer:hover {
+  transform: scale(1.05); /* Scale up the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+/* Image container */
+.imageContainer {
+  margin-bottom: 10px;
 }
 
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
+/* Contact info box styling */
+.contactInfoContainer {
+  background-color: white;
+  padding: 5px;
+  padding-left: 50px;
+  width: 100%;
 }
 
+
+.contactInfo {
+  font-size: 16px;
+  color:black;
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  align-items: flex-start; /* Align the items to the start */
+  justify-content: flex-start; /* Align the items to the top */
+  text-align: left; /* Align the text to the left */
+}
+
+.contactInfo p {
+  display: flex;
+  align-items: center; /* Vertically align the icon and text */
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Icon styling for envelope and phone */
+.icon {
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
   }
 
   .content {
     align-items: center;
+    text-align: center;
+  }
+
+  .heroImg {
+    margin-bottom: 20px;
+  }
+
+  .imageAndContactContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .contactInfoContainer {
+    width: 100%;
+    padding: 15px;
   }
 }

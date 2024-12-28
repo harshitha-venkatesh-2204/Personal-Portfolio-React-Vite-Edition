@@ -1,40 +1,51 @@
+/* Container Styling */
 .container {
   position: relative;
-  padding: 73px;
-  margin-top: 100px;
+  padding: 60px;
   z-index: 1;
   margin-left: 0%;
   margin-right: 0%;
-  background-color: #F7F4F0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for card2 and card3 */
+  grid-template-rows: auto auto; /* Two rows for the cards */
+  gap: 20px; /* Space between the cards */
 }
 
-.title {
-  padding-top: 60px;
-  color: #A6776A;
-  font-size: 40px;
-  text-transform: uppercase;
-  text-align: center!important;
-  padding-bottom: 20px;
+.card2 {
+  grid-column: 2; /* Position card2 in the second column */
+  grid-row: 1; /* Position card2 in the first row */
+  width: 700px;
+  margin-top: 30px;
+  margin-left: 55px;
 }
 
-.title span {
-  color: #2b1c18;
+/* Titles */
+.title, .title2 {
+  font-size: 38px; /* Larger font size */
+  font-weight: 700; /* Bold text */
+  color: white; /* Transparent text color for the effect */
+  -webkit-background-clip: text; /* Clips background to text */
+  background-clip: text; /* Clips background to text */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding */
+  font-family: 'Niconne', cursive;
 }
 
+/* Content and skill list */
 .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for the skills */
+  gap: 10px;
+  margin-top: 40px;
 }
 
 .skillsList {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 20px;
+  justify-content: center;
 }
 
 .skillItem {
@@ -43,59 +54,265 @@
   align-items: center;
   text-align: center;
   background-color: white;
-  padding: 0.75rem; 
-  border-radius: 6px; 
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
-  width: 120px; 
+  padding: 40px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 65px;
+  height: 70px;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Important for tooltip positioning */
+  font-family: 'Niconne', cursive;
+}
+
+.skillItem:hover {
+  transform: scale(1.2);
+}
+
+/* Tooltip Styling */
+.skillItem::after {
+  content: attr(data-tooltip); /* Dynamically display the skill name */
+  position: absolute;
+  top: -40px; /* Position the tooltip above the icon */
+  right: -20px; /* Adjust for top-right alignment */
+  background-color: #f8e27f;
+  color: #332438;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px); /* Slight upward animation */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.skillItem:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Tooltip moves into view */
 }
 
 .skillIcon {
-  width: 40px; 
-  height: 40px;
+  width: 35px; /* Icon size */
+  height: 30px;
   margin-bottom: 0.5rem;
 }
 
 .skillText p {
-  font-size: 0.8rem; 
-  color: #A6776A;
+  font-size: 0.8rem;
+  color: #332438;
   font-weight: bold;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .skillsList {
-    flex-direction: column; 
-  }
-}
-
-.buttonContainer {
-  margin-top: 48px !important; 
-
-}
-
-.contactBtn {
-  text-decoration: none !important;
-  background-color: #A6776A;
+/* Yellow Button Style */
+.yellowButton {
+  display: inline-block;
+  background-color: #f9c414; /* Yellow color */
   color: white;
-  border-radius: 10px; 
-  font-size: 20px;
   padding: 12px 24px;
-  box-shadow: 0 4px 6px rgba(243, 228, 228, 0.25);
-  transition: background-color 0.3s, transform 0.3s;
-  margin-top: 40px !important;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 200px;
+  margin-left: 400px;
+  font-family: 'Niconne', cursive;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.contactBtn:hover {
-  background-color:  #964e3a;
-  transform: scale(1.05);
+.yellowButton:hover {
+  background-color: #f9dc5c; /* Darker yellow on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Container for Jobs and Publications */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between cards */
+}
+
+.jobsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 20px;
+}
+
+.jobItem {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Niconne', cursive;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: #332438;
+  width: 45%; /* Adjust width to show multiple items in a row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow to card */
+  transition: transform 0.3s ease; /* Smooth hover transition */
+  margin-right: 20px;
+  background-color: white;
+}
+
+.jobItem:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  background-color: #f9dc5c;
+}
+
+.jobIcon {
+  width: 30px; /* Small logo */
+  height: 30px; /* Small logo */
+  border-radius: 50%; /* Round logo */
+  object-fit: cover; /* Ensure the image fits within the circle */
+  margin-bottom: 10px; /* Space between logo and text */
+}
+
+.jobDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the text */
+  color: #332438;
+}
+
+.jobTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #332438;
+  text-align: center;
+}
+
+.jobOrganisation {
+  font-size: 16px;
+  color: #332438;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.jobExperiences {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #332438;
+  text-align: justify;
+}
+
+.jobExperiences li {
+  margin-bottom: 5px;
+}
+
+.publicationsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to align items in a row */
+  flex-wrap: wrap; /* Allow wrapping if there are too many cards to fit in one row */
+  gap: 10px; /* Add spacing between cards */
+}
+
+.publicationItem {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set a fixed width for cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 25px;
+  background-color: white;
+}
+
+.publicationItem:hover {
+  transform: scale(1.05); /* Slightly scale the card on hover */
+  background-color: #f9dc5c; /* Increase shadow on hover */
+}
+
+.publicationLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove default underline */
+}
+
+.publicationIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.publicationTitle {
+  font-size: 16px;
+  color: #422c4a;
+  font-family: 'Niconne', cursive;
+}
+
+.publicationTitle:hover {
+  color: #332438;
+  font-weight: 800;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the container grid to single column layout */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for small screens */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 250px;
+  }
+
+  /* Adjust the job items to fit in a single column */
+  .jobItem {
+    width: 100%; /* Full width on small screens */
+    margin-right: 0;
+  }
+
+  /* Adjust the card2 position for smaller screens */
+  .card2 {
+    width: 100%; /* Make card2 take up full width */
+    margin-left: 0; /* Remove the left margin */
+    margin-top: 20px;
+  }
+
+  /* Adjust title font size */
+  .title, .title2 {
+    font-size: 28px; /* Smaller title on small screens */
+  }
+
+  /* Adjust skill item sizes */
+  .skillItem {
+    width: 50px; /* Smaller icon size */
+    height: 55px;
+    padding: 30px;
+  }
+
+  .yellowButton {
+    width: 100%; /* Full-width button on small screens */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Reduce publication item size */
+  .publicationItem {
+    width: 100%; /* Full width for publication cards */
+    margin-right: 0;
+  }
+
+  /* Skills list should be stacked on top of each other on small screens */
+  .skillsList {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

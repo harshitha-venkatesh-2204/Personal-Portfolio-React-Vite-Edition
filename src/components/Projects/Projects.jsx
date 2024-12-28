@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import projectsData from '../../data/projects.json';
+import projectsData from '../../data/projects.json'; 
 import styles from './Projects.module.css'; 
 import '@fortawesome/react-fontawesome';
 import '@fortawesome/free-brands-svg-icons';
@@ -44,16 +44,17 @@ export const Projects = () => {
       <div className={`${styles['scroll-arrow']} ${styles['left']} ${!isVisible ? styles['hidden'] : ''}`} onClick={() => scroll('left')}>
         <i className="fas fa-chevron-left"></i>
       </div>
-      <p className={styles.title}>Proj<span>ects</span></p>
       <div className={styles['projects-container']} ref={containerRef}>
         {projectsData.map((project, index) => (
           <div key={index} className={styles['project-card']}>
             <h6 className='title'>
+              {/* Wrapping the project title in a link */}
               <a href={project.source} target="_blank" rel="noopener noreferrer">
                 {project.title}
               </a>
             </h6>
-            <p>{project.description}</p>
+            {/* Adding the project image */}
+            <img src={project.image} className={styles['project-image']} alt={project.title} />
           </div>
         ))}
       </div>

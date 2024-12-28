@@ -1,51 +1,71 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("ABOUT");
+
+  const handleClick = (section) => {
+    setActiveSection(section);
+  };
 
   return (
     <>
-      <header className={styles.header}>
-        <h1 className={styles.headerTitle}>Harshitha Venkatesh</h1>
-      </header>
       <nav className={styles.navbar}>
-        <div className={styles.menu}>
-          <button
-            className={styles.menuBtn}
-            onClick={() => setMenuOpen(!menuOpen)}
+        <h1>Harshitha Venkatesh</h1>
+        <ul className={styles.navbarList}>
+          <li
+            className={styles.navbarItem}
+            onClick={() => handleClick("ABOUT")}
           >
-            <FontAwesomeIcon icon={faBars} size="lg" />
-          </button>
-          <ul
-            className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-            onClick={() => setMenuOpen(false)}
+            <a
+              href="#"
+              className={`${styles.navbarLink} ${
+                activeSection === "ABOUT" ? styles.active : ""
+              }`}
+            >
+              ABOUT
+            </a>
+          </li>
+          <li
+            className={styles.navbarItem}
+            onClick={() => handleClick("EXPERIENCE")}
           >
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#skills">SKILLS</a>
-            </li>
-            <li>
-              <a href="#experience">EXPERIENCES</a>
-            </li>
-            <li>
-              <a href="#certifications">CERTIFICATIONS</a>
-            </li>
-            <li>
-              <a href="#publications">PUBLICATIONS</a>
-            </li>
-            <li>
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
+            <a
+              href="#experience"
+              className={`${styles.navbarLink} ${
+                activeSection === "EXPERIENCE" ? styles.active : ""
+              }`}
+            >
+              EXPERIENCE
+            </a>
+          </li>
+          <li
+            className={styles.navbarItem}
+            onClick={() => handleClick("PROJECTS")}
+          >
+            <a
+              href="#projects"
+              className={`${styles.navbarLink} ${
+                activeSection === "PROJECTS" ? styles.active : ""
+              }`}
+            >
+              PROJECTS
+            </a>
+          </li>
+          <li
+            className={styles.navbarItem}
+            onClick={() => handleClick("HIGHLIGHTS")}
+          >
+            <a
+              href="#skills"
+              className={`${styles.navbarLink} ${
+                activeSection === "HIGHLIGHTS" ? styles.active : ""
+              }`}
+            >
+              HIGHLIGHTS
+            </a>
+          </li>
+        </ul>
       </nav>
     </>
   );

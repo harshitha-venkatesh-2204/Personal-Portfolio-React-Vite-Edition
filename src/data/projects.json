@@ -1,38 +1,49 @@
 [
   {
     "title": "Ecommerce Website and Comprehensive Sales Analytics Dashboard Using Django",
-    "description": "Developed an innovative e-commerce platform blending fashion and functionality, allowing users to explore and purchase a range of trendy handbags. The platform features intuitive navigation for easy shopping and a comprehensive dashboard for business analytics. It includes a staff login for managing orders, customer details, product listings, and shipping addresses. This design enhances operational efficiency and provides valuable insights into website performance.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Django_DBMS_Project.git"
+    "image": "assets/projects/DBMS.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Django-E-Commerce-App-with-Insights-Dashboard.git"
   },
   {
     "title": "Ecommerce Business Intelligence and Performance Analytics Dashboard",
-    "description": "Developed a comprehensive Ecommerce Business Analytics Dashboard using React JS and Python to deliver key insights for ecommerce businesses. Leveraged the Brazilian Ecommerce dataset from Kaggle and integrated OLTP and OLAP databases for effective data management. The dashboard features widgets and graphs visualizing KPIs like total revenue, top-selling products, and sales distribution by region. This design supports informed decision-making and drives business growth.",
-    "source": "https://github.com/harshitha-venkatesh-2204/EcomPerformanceDashboard"
+    "image":"assets/projects/AdvDBMS.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Performance-Analytics-Dashboard.git"
   },
   {
     "title": "Prototype for Enhancing Traffic Data Privacy and Security in Intelligent Transportation Systems (ITS)",
-    "description": "Proposed a UI design for an ITS app to enhance traffic data privacy and security. Features include secure authentication, real-time traffic visualization, customizable privacy settings, and anonymous route planning. It also supports anonymous incident reporting and data sharing consent. The design ensures cross-platform compatibility, secure communication, and compliance with data privacy standards.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Human-Information-Processing"
+    "image": "assets/projects/HIP.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Cognitive-Processes-in-Information-Handling.git"
   },
   {
     "title": "Optimizing Operations and Enhancing Experiences with Data Science and Machine Learning",
-    "description": "Utilized data science and machine learning to tackle challenges at PPG, focusing on logistics, product design, and customer experience. Conducted a regression task to predict paint properties and a classification task to identify popular products. Machine learning models provided insights that enhanced efficiency and supported data-driven decision-making across the business.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Regression-and-Classification-R-and-tidyverse-.git"
-  },
-  {
-    "title": "Advanced Customer Segmentation Using K-Means Clustering with PCA Dimensionality Reduction",
-    "description": "Developed a customer segmentation model using K-Means clustering to categorize clients based on spending and demographics. The project included data preprocessing, feature engineering, and PCA for dimensionality reduction. Clustering analysis identified four key customer profiles with distinct spending patterns and family structures. These insights aid in tailoring marketing strategies and improving customer targeting.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Customer-Segmentation"
+    "image": "assets/projects/MLDS.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Data-Driven-Insights-for-PPG-Optimizing-Operations-with-Machine-Learning.git"
   },
   {
     "title": "Enhancing Real Estate Price Predictions with Random Forest Regression",
-    "description": "This project uses the RandomForestRegressor to enhance real estate price predictions through ensemble learning. It trains multiple Decision Trees on random feature subsets and averages their predictions to reduce overfitting and improve generalization. The workflow includes automating data extraction, exploratory analysis, and stratified sampling. Data preprocessing involves feature scaling, custom transformations, and creating new attributes like rooms per household. The model provides robust predictions and insights into real estate value factors.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Prediction-Project"
+    "image": "assets/projects/price_prediction.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Real-Estate-Price-Prediction-with-Random-Forest-Regression.git"
   },
   {
-    "title": "Comprehensive Analysis and Forecasting of Sales Data Using Machine Learning",
-    "description": "Conducted a comprehensive sales data analysis with exploration, preprocessing, and forecasting. Handled missing values, merged store data, and performed extensive exploratory analysis to identify sales patterns and correlations. Key visualizations showed trends, store performance, and the effects of promotions. Feature engineering and time-series analysis supported accurate forecasting with models like Random Forest and XGBoost. Evaluated model performance using metrics like MAE, MAPE, SMAPE, and R², comparing feature importances and predictions.",
-    "source": "https://github.com/harshitha-venkatesh-2204/Sale-Analysis-and-Forecasting.git"
+    "title": "Customer-Segmentation-with-K-Means-Clustering-and-PCA ",
+    "image":"assets/projects/kmeans.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Customer-Segmentation-with-K-Means-Clustering-and-PCA.git"
+  },
+  {
+    "title": "Verifiable-Cassandra-Blockchain",
+    "image":"assets/projects/blockchain.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Verifiable-Cassandra-Blockchain.git"
+  },
+  {
+    "title": "Hadoop-Log-N-Gram-Analysis",
+    "image":"assets/projects/Hadoop.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Hadoop-Log-N-Gram-Analysis.git"
+  },
+  {
+    "title": "Analytics-Dashboard-Using-Power-BI",
+    "image":"assets/projects/PowerBI.png",
+    "source": "https://github.com/harshitha-venkatesh-2204/Analytics-Dashboard-Using-Power-BI.git"
   }
+
 
 ]

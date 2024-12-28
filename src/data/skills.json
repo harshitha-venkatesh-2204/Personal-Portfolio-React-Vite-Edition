@@ -4,16 +4,24 @@
     "imageSrc": "skills/python.jpg"
   },
   {
-    "title": "Java",
-    "imageSrc": "skills/html.png"
-  },
-  {
     "title": "R",
     "imageSrc": "skills/R.jpg"
   },
   {
-    "title": "C#",
-    "imageSrc": "skills/Csharp.png"
+    "title": "SQL",
+    "imageSrc": "skills/mysql.jpg"
+  },
+  {
+    "title": "DBT",
+    "imageSrc": "skills/DBT.png"
+  },
+  {
+    "title": "Snowflake",
+    "imageSrc": "skills/snowflake.png"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/aws.jpeg"
   },
   {
     "title": "NumPy",
@@ -28,16 +36,8 @@
     "imageSrc": "skills/matplotlib.png"
   },
   {
-    "title": "Seaborn",
-    "imageSrc": "skills/seaborn.png"
-  },
-  {
     "title": "Scikit-Learn",
     "imageSrc": "skills/scikit.png"
-  },
-  {
-    "title": "Tensorflow",
-    "imageSrc": "skills/TF.png"
   },
   {
     "title": "Tidyverse",
@@ -56,15 +56,19 @@
     "imageSrc": "skills/css.png"
   },
   {
-    "title": "JavaScript",
-    "imageSrc": "skills/js.png"
-  },
-  {
     "title": "React JS",
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "SQL",
-    "imageSrc": "skills/mysql.jpg"
+    "title": "Node JS",
+    "imageSrc": "skills/nodejs.jpeg"
+  },
+  {
+    "title": "Power BI",
+    "imageSrc": "skills/powerbi.jpeg"
+  },
+  {
+    "title": "Tableau",
+    "imageSrc": "skills/tableau.png"
   }
 ]

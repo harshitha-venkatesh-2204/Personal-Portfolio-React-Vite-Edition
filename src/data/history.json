@@ -1,18 +1,26 @@
 [
   {
-    "role": "Packaged App Development Analyst",
+    "role": "Data Engineer",
+    "organisation": "PathVu",
+    "startDate": "September 2024",
+    "endDate": "November 2024",
+    "experiences": ["Designed and implemented a data pipeline for automating 3D LiDAR analysis, ensuring ADA compliance checks for curb ramps. Developed algorithms for data cleaning, feature extraction, and compliance validation using Python and Cloud Compare. Integrated a Tkinter-based interface to streamline the upload, point selection, and slope analysis, improving accessibility audits and reducing processing time."],
+    "imageSrc": "history/pathVU.jpeg"
+  },
+  {
+    "role": "Full Stack Engineer",
     "organisation": "Accenture",
     "startDate": "July 2021",
     "endDate": "July 2023",
-    "experiences": ["At Accenture, I started as an Application Development Associate with training in Azure and web technologies, before being promoted to Packaged App Development Analyst. I developed advanced data visualizations and dynamic dashboards to aid business decision-making, integrated KPIs for real-time performance tracking, and managed SQL databases for accurate data handling. Additionally, I supported the deployment and configuration of application releases, ensuring smooth integration and enhancing overall reliability. My role also involved optimizing interactive dashboards and graphs to improve data insights."],
+    "experiences": ["Engineered advanced data visualizations and analytics on a big data and AI platform, creating interactive dashboards using React.js, D3.js, and Chart.js for data-driven decision-making. Managed SQL databases and integrated KPIs using JSON-based configurations for dynamic data ingestion, enabling real-time analytics and seamless integration with interactive dashboards. Assisted in deploying scalable applications with Amazon S3 and Kubernetes, enhancing system performance and user engagement."],
     "imageSrc": "history/accenture.jpg"
   },
   {
-    "role": "Dot Net Intern",
+    "role": "Software Engineering Intern",
     "organisation": "Capgemini",
     "startDate": "January 2021",
     "endDate": "April 2021",
-    "experiences": ["During my internship, I developed an Employee Portal that improved internal communication and workflow. I implemented features like user authentication, role-based access control, and data management. I conducted thorough testing and debugging to ensure the portal's stability and performance, and contributed to technical documentation, including system architecture, code comments, and user guides."],
-    "imageSrc": "history/capgemini.jpg"
+    "experiences": ["Developed an Employee Portal using .NET Framework, ASP.NET, and C#, focusing on database creation for user authentication, role-based access control, and data management. Designed secure and efficient database structures to enhance internal communication and streamline workflows, while gaining proficiency in full-stack development with .NET technologies."],
+    "imageSrc": "history/capgemini.png"
   }
 ]
