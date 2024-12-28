@@ -15,7 +15,7 @@
 
 .title {
   padding-top: 70px;
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
   padding-bottom: 20px;
   font-size: 90px;
   font-weight: 700;
@@ -57,7 +57,7 @@
   padding: 20px;
   width: calc(33.33% - 20px); /* 3 items per row */
   box-sizing: border-box;
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne' ;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out; /* Transition background on hover */
 }

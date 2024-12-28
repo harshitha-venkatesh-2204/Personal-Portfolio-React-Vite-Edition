@@ -28,7 +28,7 @@
   background-clip: text; /* Clips background to text */
   text-align: center; /* Center the text */
   padding: 20px; /* Add padding */
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
 }
 
 /* Content and skill list */
@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   position: relative; /* Important for tooltip positioning */
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
 }
 
 .skillItem:hover {
@@ -123,7 +123,7 @@
   margin-top: 20px;
   width: 200px;
   margin-left: 400px;
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -152,7 +152,7 @@
 .jobItem {
   display: flex;
   flex-direction: column;
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
   align-items: center;
   padding: 15px;
   margin-bottom: 20px;
@@ -254,7 +254,7 @@
 .publicationTitle {
   font-size: 16px;
   color: #422c4a;
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne';
 }
 
 .publicationTitle:hover {
