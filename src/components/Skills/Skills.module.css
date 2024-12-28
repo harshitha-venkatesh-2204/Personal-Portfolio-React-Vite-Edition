@@ -283,13 +283,13 @@
   .card2 {
     width: 100%; /* Make card2 take up full width */
     margin-left: 0; /* Remove the left margin */
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   /* Adjust title font size */
   .title, .title2 {
     font-size: 28px; /* Smaller title on small screens */
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   /* Adjust skill item sizes */
