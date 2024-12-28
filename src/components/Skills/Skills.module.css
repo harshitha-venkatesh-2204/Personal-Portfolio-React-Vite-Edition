@@ -270,7 +270,7 @@
     grid-template-columns: 1fr; /* Single column for small screens */
     gap: 20px;
     padding: 20px;
-    margin-top: 1000px;
+    margin-top: 50px;
   }
 
   /* Adjust the job items to fit in a single column */
