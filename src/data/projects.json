@@ -1,47 +1,47 @@
 [
   {
     "title": "Ecommerce Website and Comprehensive Sales Analytics Dashboard Using Django",
-    "image": "assets/projects/DBMS.png",
+    "image": "projects/DBMS.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Django-E-Commerce-App-with-Insights-Dashboard.git"
   },
   {
     "title": "Ecommerce Business Intelligence and Performance Analytics Dashboard",
-    "image":"assets/projects/AdvDBMS.png",
+    "image":"projects/AdvDBMS.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Performance-Analytics-Dashboard.git"
   },
   {
     "title": "Prototype for Enhancing Traffic Data Privacy and Security in Intelligent Transportation Systems (ITS)",
-    "image": "assets/projects/HIP.png",
+    "image": "projects/HIP.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Cognitive-Processes-in-Information-Handling.git"
   },
   {
     "title": "Optimizing Operations and Enhancing Experiences with Data Science and Machine Learning",
-    "image": "assets/projects/MLDS.png",
+    "image": "projects/MLDS.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Data-Driven-Insights-for-PPG-Optimizing-Operations-with-Machine-Learning.git"
   },
   {
     "title": "Enhancing Real Estate Price Predictions with Random Forest Regression",
-    "image": "assets/projects/price_prediction.png",
+    "image": "projects/price_prediction.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Real-Estate-Price-Prediction-with-Random-Forest-Regression.git"
   },
   {
     "title": "Customer-Segmentation-with-K-Means-Clustering-and-PCA ",
-    "image":"assets/projects/kmeans.png",
+    "image":"projects/kmeans.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Customer-Segmentation-with-K-Means-Clustering-and-PCA.git"
   },
   {
     "title": "Verifiable-Cassandra-Blockchain",
-    "image":"assets/projects/blockchain.png",
+    "image":"projects/blockchain.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Verifiable-Cassandra-Blockchain.git"
   },
   {
     "title": "Hadoop-Log-N-Gram-Analysis",
-    "image":"assets/projects/Hadoop.png",
+    "image":"projects/Hadoop.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Hadoop-Log-N-Gram-Analysis.git"
   },
   {
     "title": "Analytics-Dashboard-Using-Power-BI",
-    "image":"assets/projects/PowerBI.png",
+    "image":"projects/PowerBI.png",
     "source": "https://github.com/harshitha-venkatesh-2204/Analytics-Dashboard-Using-Power-BI.git"
   }
 

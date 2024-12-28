@@ -11,6 +11,8 @@
   justify-content: flex-start; /* Pushes content to the left */
   gap: 400px; /* Adds space between the name and the navbar items */
   z-index: 1000; /* Ensure navbar stays above all content */
+  width: 100%;
+  max-width: 1450px;
 }
 
 /* Active state for navbar item */

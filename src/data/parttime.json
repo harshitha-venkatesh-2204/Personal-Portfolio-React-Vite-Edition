@@ -3,12 +3,12 @@
       "role": "Teaching Assistant",
       "organisation": "University of Pittsburgh",
       "experiences": ["Graded labs and evaluated MIPS code using Gradescope, providing detailed feedback to enhance student understanding of MIPS assembly language. Developed strong analytical skills in code assessment and deepened knowledge of MIPS and effective evaluation practices."],
-      "imageSrc": "assets/parttime/pitt.png"
+      "imageSrc": "parttime/pitt.png"
     },
     {
       "role": "Engagement Ambassador",
       "organisation": "University of Pittsburgh",
       "experiences": ["Served as a Student Engagement Ambassador, raising funds to support university initiatives and fostering connections with alumni. Developed strong communication and interpersonal skills while promoting philanthropic efforts and enhancing alumni engagement."],
-      "imageSrc": "assets/parttime/pitt.png"
+      "imageSrc": "parttime/pitt.png"
     }
   ]
