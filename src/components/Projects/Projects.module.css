@@ -70,7 +70,7 @@
 .project-card h6 {
   font-size: 18px; /* Adjusted font size */
   color: #291c2d;
-  font-family: 'Niconne';
+  font-family: '"Roboto", serif;';
   font-weight: 200;
   margin-bottom: 10px; /* Added margin to separate title from image */
   text-align: center; /* Centered the title */

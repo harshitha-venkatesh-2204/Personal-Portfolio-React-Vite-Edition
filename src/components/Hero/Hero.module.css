@@ -40,7 +40,7 @@
 /* Description text styling */
 .description {
   font-size: 15px;
-  font-family: 'Niconne';
+  font-family: '"Roboto", serif;';
   color: white;
   max-width: 600px;
   line-height: 1.6;
@@ -50,7 +50,7 @@
 
 /* LinkedIn Button */
 .linkedinBtn {
-  font-family: 'Niconne';
+  font-family: '"Roboto", serif;';
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #f9c414;
@@ -158,5 +158,21 @@
   .contactInfoContainer {
     width: 100%;
     padding: 15px;
+  }
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .heroImg {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 480px) {
+  .heroImg {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 }
